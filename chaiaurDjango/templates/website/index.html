@@ -1,13 +1,9 @@
-{% load static %} <!--Load the static template tag to use static files -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}"> <!-- Link to the CSS file in the static directory -->
-</head>
-<body>
-    <h1>Chai Aur Django</h1>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+    <h1> Chai aur code | Home page </h1>
+{% endblock %}
