@@ -19,4 +19,8 @@ python manage.py runserver
 
 =>django flow structure
 User ---> request -->urls.py --->views.py --->response --> user
+
+
+=> To create app 
+python manage.py startapp appname
                                     
