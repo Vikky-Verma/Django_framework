@@ -1,0 +1,18 @@
+=> for creating virtual environment
+python -m venv .venv -> on windows
+
+=> for activate virtual environment
+.venv\Scripts\activate  -> on windows
+source .venv/bin/activate   -> on macOs and linux
+
+=> for deactivate virtual environment
+deactivate
+
+=> To install django
+pip install Django
+
+=>create a django Project
+django-admin startproject projectname
+
+=>To run the development server
+python manage.py runserver
