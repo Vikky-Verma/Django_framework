@@ -16,3 +16,7 @@ django-admin startproject projectname
 
 =>To run the development server
 python manage.py runserver
+
+=>django flow structure
+User ---> request -->urls.py --->views.py --->response --> user
+                                    
