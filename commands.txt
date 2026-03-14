@@ -42,6 +42,17 @@ python manage.py tailwind start
 => To migrate 
 python manage.py migrate
 
-=> To create superuser
+=> To create superuser (admin password)
 python manage.py createsuperuser
 python manage.py runserver
+
+=> To change admin password 
+python manage.py changepassword username
+
+=> For imageField in Modelfield 
+python -m pip install Pillow
+
+
+=> for migration of models.py
+python manage.py makemigrations appname
+python manage.py migrate

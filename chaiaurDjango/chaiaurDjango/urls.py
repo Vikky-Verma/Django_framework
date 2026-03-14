@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path , include # to include the urls of chai app
+from django.conf import settings # Add this line to import settings for media files
+from django.conf.urls.static import static # Add this line to import static for serving media files during development
 from . import views
 
 urlpatterns = [
@@ -27,4 +29,4 @@ urlpatterns = [
     
     
     path("__reload__/", include("django_browser_reload.urls")), # Add this line to include the URL pattern for django_browser_reload
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # Add this line to serve media files during development
