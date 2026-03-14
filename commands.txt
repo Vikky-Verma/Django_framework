@@ -24,3 +24,24 @@ User ---> request -->urls.py --->views.py --->response --> user
 => To create app 
 python manage.py startapp appname
                                     
+
+
+=> To download django tailwind 
+pip install django-tailwind 
+pip instll 'django-tailwind[reload]'
+
+=> To initialize tailwind 
+python manage.py tailwind init
+
+=> To install tailwind
+python manage.py tailwind install
+
+=> to tailwind run in django  in different terminal
+python manage.py tailwind start
+
+=> To migrate 
+python manage.py migrate
+
+=> To create superuser
+python manage.py createsuperuser
+python manage.py runserver

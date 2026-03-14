@@ -39,7 +39,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chai', # Add this line to include the 'chai' app in the installed apps
+    'tailwind', # Add this line to include the 'tailwind' app in the installed apps
+    'theme', # Add this line to include the 'theme' app in the installed apps
+    'django_browser_reload', # Add this line to include the 'django_browser_reload' app in the installed apps
 ]
+
+TAILWIND_APP_NAME = 'theme' # Add this line to specify the Tailwind app name
+INTERNAL_IPS = ['127.0.0.1'] # Add this line to specify the internal IPs for Tailwind CSS to work properly
+
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd" # Add this line to specify the path to npm
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -49,6 +57,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
+    "django_browser_reload.middleware.BrowserReloadMiddleware", # Add this line to include the BrowserReloadMiddleware in the middleware list
 ]
 
 ROOT_URLCONF = 'chaiaurDjango.urls'
